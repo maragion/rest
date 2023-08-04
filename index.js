@@ -1,6 +1,7 @@
 const express = require("express");
 const data = require("./db.json");
 const cors = require("cors");
+const fs = require("fs")
 
 const app = express();
 const port = 5000;
@@ -46,11 +47,24 @@ app.get("/requests:id", (req, res) => {
 app.post("/users", (req, res) => {
     data.users.push(req.body);
     res.send(data.users);
+
+    fs.writeFile("db.json", JSON.stringify(data), err => {
+            if (err) {
+                console.log(err);
+            } else console.log("Write Sucsesfully");
+        }
+    )
 })
 
 app.post("/requests", (req, res) => {
     data.requests.push(req.body);
     res.send(data.requests);
+    fs.writeFile("./db.json", JSON.stringify(data), err => {
+        if (err) {
+            console.log(err);
+        } else
+            console.log("Write Sucsesfully");
+    })
 })
 
 
