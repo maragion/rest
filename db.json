@@ -1,9 +1,16 @@
 {
-  "users":[
+  "users": [
+    {
+      "user": "Aleksei",
+      "age": 30,
+      "sex": ""
+    }
+  ],
+  "requests": [
     {
       "user": "Aleksei",
       "mail": "example@mail.com",
       "request": "request example"
     }
-  ]  
+  ]
 }
