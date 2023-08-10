@@ -12,5 +12,10 @@
       "mail": "example@mail.com",
       "request": "request example"
     }
+  ],
+  "tasks": [
+    {"id": 1, "task": "Lorem ipsum dolor", "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit."},
+    {"id": 2, "task": "Lorem ipsum dolor", "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit."},
+    {"id": 3, "task": "Lorem ipsum dolor", "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit."}
   ]
 }

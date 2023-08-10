@@ -20,6 +20,9 @@ app.get("/requests", (req, res) => {
     res.send(data.requests)
 })
 
+app.get("/tasks", (req, res) => {
+    res.send(data.tasks)
+})
 
 // Get by id
 
@@ -40,6 +43,7 @@ app.get("/requests:id", (req, res) => {
         res.status(404).send("Error: 404. Request no found");
 
 })
+
 
 
 // Post
