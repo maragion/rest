@@ -71,6 +71,16 @@ app.post("/requests", (req, res) => {
     })
 })
 
+app.post("/tasks", (req, res) => {
+    data.tasks.push(req.body);
+    res.send(data.tasks);
+    fs.writeFile("./db.json", JSON.stringify(data), err => {
+        if (err) {
+            console.log(err);
+        } else
+            console.log("Write Sucsesfully");
+    })
+})
 
 // Listen
 app.listen(process.env.PORT || port, () => console.log(`BIP BUP on port:${port}`));
