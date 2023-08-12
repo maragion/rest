@@ -19,16 +19,16 @@
       "task": "Lorem ipsum dolor",
       "description": [
         {
-          "1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         },
         {
-          "2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         },
         {
-          "3": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         },
         {
-          "4": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         }
       ]
     },
