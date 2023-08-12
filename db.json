@@ -35,12 +35,29 @@
     {
       "id": 2,
       "task": "Lorem ipsum dolor",
-      "description": ""
+      "description": [
+        {
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        },
+        {
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        },
+        {
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        }
+      ]
     },
     {
       "id": 3,
       "task": "Lorem ipsum dolor",
-      "description": ""
+      "description": [
+        {
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        },
+        {
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        }
+      ]
     }
   ]
 }
