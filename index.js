@@ -44,6 +44,15 @@ app.get("/requests:id", (req, res) => {
 
 })
 
+app.get("/tasks/:id", (req, res) => {
+    let id = req.params.id;
+    res.send(data.tasks[id])
+})
+app.get("/tasks/:id/subTasks", (req, res) => {
+    let id = req.params.id;
+    res.send(data.tasks[id].subTasks)
+})
+
 
 
 // Post
@@ -80,6 +89,17 @@ app.post("/tasks", (req, res) => {
         } else
             console.log("Write Sucsesfully");
     })
+})
+
+
+
+app.post("/tasks/:id/subTasks", (req, res) => {
+    let id = req.params.id;
+    console.log(req.body)
+
+    data.tasks[id].subTasks.push(req.body)
+
+    res.send(data.tasks[id].subTasks);
 })
 
 // Listen

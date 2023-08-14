@@ -4,6 +4,11 @@
       "user": "Aleksei",
       "age": 30,
       "sex": "male"
+    },
+    {
+      "user": "Elena",
+      "age": 30,
+      "sex": "female"
     }
   ],
   "requests": [
