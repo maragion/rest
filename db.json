@@ -21,14 +21,8 @@
   "tasks": [
     {
       "id": 1,
-      "task": "Lorem ipsum dolor",
+      "task": "HTML",
       "subTasks": [
-        {
-          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-        },
-        {
-          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-        },
         {
           "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         },
@@ -39,7 +33,7 @@
     },
     {
       "id": 2,
-      "task": "Lorem ipsum dolor",
+      "task": "Css",
       "subTasks": [
         {
           "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
@@ -54,7 +48,7 @@
     },
     {
       "id": 3,
-      "task": "Lorem ipsum dolor",
+      "task": "Js",
       "subTasks": [
         {
           "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
