@@ -25,7 +25,8 @@
       "subTasks": [
         {
           "subTaskId": 1,
-          "subTask": "BipBip"
+          "subTask": "BipBip",
+          "isComplete": true
         }
       ]
     },
@@ -35,11 +36,14 @@
       "subTasks": [
         {
           "subTaskId": 1,
-          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+          "isComplete": false
         },
         {
           "subTaskId": 2,
-          "subTask": "lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          "subTask": "lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+          "isComplete": false
+
         }
       ]
     },
@@ -49,15 +53,21 @@
       "subTasks": [
         {
           "subTaskId": 1,
-          "subTask": "bip"
+          "subTask": "bip",
+          "isComplete": false
+
         },
         {
           "subTaskId": 2,
-          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+          "isComplete": false
+
         },
         {
           "subTaskId": 3,
-          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+          "isComplete": false
+
         }
       ]
     }
