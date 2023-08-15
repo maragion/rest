@@ -54,7 +54,6 @@ app.get("/tasks/:id/subTasks", (req, res) => {
 })
 
 
-
 // Post
 
 app.post("/users", (req, res) => {
@@ -92,7 +91,6 @@ app.post("/tasks", (req, res) => {
 })
 
 
-
 app.post("/tasks/:id/subTasks", (req, res) => {
     let id = req.params.id;
     console.log(req.body)
@@ -100,6 +98,35 @@ app.post("/tasks/:id/subTasks", (req, res) => {
     data.tasks[id].subTasks.push(req.body)
 
     res.send(data.tasks[id].subTasks);
+})
+
+
+// Delete
+
+app.delete("/tasks/:id", (req, res) => {
+    let id = req.params.id;
+    let taskId = 1
+    data.tasks.splice(id, 1)
+    data.tasks.map(value => {
+        value.id = taskId;
+        taskId++;
+    })
+    res.send(data.tasks)
+})
+
+app.delete("/tasks/:id/subTasks/:subId", (req, res) => {
+    let id = req.params.id;
+    let subTaskId = req.params.subId;
+    let subId = 1;
+    console.log(subTaskId);
+
+    data.tasks[id].subTasks.splice(subTaskId, 1)
+    data.tasks[id].subTasks.map(value => {
+        value.subTaskId = subId;
+        subId++;
+    })
+    res.send(data.tasks[id].subTasks)
+
 })
 
 // Listen

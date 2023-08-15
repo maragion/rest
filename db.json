@@ -24,9 +24,11 @@
       "task": "HTML",
       "subTasks": [
         {
+          "subTaskId": 1,
           "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         },
         {
+          "subTaskId": 2,
           "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         }
       ]
@@ -36,13 +38,16 @@
       "task": "Css",
       "subTasks": [
         {
+          "subTaskId": 1,
           "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         },
         {
+          "subTaskId": 2,
           "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         },
         {
-          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          "subTaskId": 3,
+          "subTask": "lorem ipsum dolor sit amet, consectetur adipisicing elit."
         }
       ]
     },
@@ -51,9 +56,15 @@
       "task": "Js",
       "subTasks": [
         {
+          "subTaskId": 1,
           "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         },
         {
+          "subTaskId": 2,
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        },
+        {
+          "subTaskId": 3,
           "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         }
       ]
