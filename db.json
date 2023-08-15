@@ -25,11 +25,7 @@
       "subTasks": [
         {
           "subTaskId": 1,
-          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-        },
-        {
-          "subTaskId": 2,
-          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          "subTask": "BipBip"
         }
       ]
     },
@@ -43,10 +39,6 @@
         },
         {
           "subTaskId": 2,
-          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-        },
-        {
-          "subTaskId": 3,
           "subTask": "lorem ipsum dolor sit amet, consectetur adipisicing elit."
         }
       ]
@@ -57,7 +49,7 @@
       "subTasks": [
         {
           "subTaskId": 1,
-          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          "subTask": "bip"
         },
         {
           "subTaskId": 2,

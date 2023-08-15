@@ -101,32 +101,47 @@ app.post("/tasks/:id/subTasks", (req, res) => {
 })
 
 
+//Patch
+
+app.patch("/tasks/:id/subTasks/:subId", (req, res) => {
+    let id = req.params.id;
+    let subTaskId = req.params.subId;
+    console.log(req.body)
+    data.tasks[id].subTasks[subTaskId].subTask = req.body.subTask
+    res.send(data.tasks[id].subTasks[subTaskId])
+})
+
+
 // Delete
 
 app.delete("/tasks/:id", (req, res) => {
     let id = req.params.id;
     let taskId = 1
-    data.tasks.splice(id, 1)
-    data.tasks.map(value => {
-        value.id = taskId;
-        taskId++;
-    })
-    res.send(data.tasks)
+    if (data.tasks[id]) {
+        data.tasks.splice(id, 1)
+        data.tasks.map(value => {
+            value.id = taskId;
+            taskId++;
+        })
+        res.send(data.tasks)
+    } else
+        res.send("404: NotFound")
 })
 
 app.delete("/tasks/:id/subTasks/:subId", (req, res) => {
     let id = req.params.id;
     let subTaskId = req.params.subId;
     let subId = 1;
-    console.log(subTaskId);
 
-    data.tasks[id].subTasks.splice(subTaskId, 1)
-    data.tasks[id].subTasks.map(value => {
-        value.subTaskId = subId;
-        subId++;
-    })
-    res.send(data.tasks[id].subTasks)
-
+    if (data.tasks[id].subTasks[subTaskId]) {
+        data.tasks[id].subTasks.splice(subTaskId, 1)
+        data.tasks[id].subTasks.map(value => {
+            value.subTaskId = subId;
+            subId++;
+        })
+        res.send(data.tasks[id].subTasks)
+    } else
+        res.send("404: NotFound")
 })
 
 // Listen
