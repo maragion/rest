@@ -99,8 +99,8 @@ app.post("/tasks/:id/subTasks", (req, res) => {
     console.log(req.body)
 
     data.tasks[id].subTasks.push(req.body)
-
-    res.send(data.tasks[id].subTasks);
+    changeTaskStatus(data.tasks[id])
+    res.send(data.tasks);
 })
 
 
@@ -118,7 +118,7 @@ app.patch("/tasks/:id/subTasks/:subId", (req, res) => {
     } else if (completeKey in req.body) {
         data.tasks[id].subTasks[subTaskId].isComplete = req.body.isComplete
         changeTaskStatus(data.tasks[id])
-        res.send(data.tasks[id].subTasks[subTaskId])
+        res.send(data.tasks)
     }
 })
 
