@@ -1,7 +1,7 @@
 import express from 'express';
 import data from "./db.json" assert {type: 'json'};
 import cors from "cors";
-import fs from "fs"
+// import fs from "fs"
 
 const app = express();
 const port = 5000;
@@ -63,34 +63,34 @@ app.post("/users", (req, res) => {
     data.users.push(req.body);
     res.send(data.users);
 
-    fs.writeFile("db.json", JSON.stringify(data), err => {
-            if (err) {
-                console.log(err);
-            } else console.log("Write Sucsesfully");
-        }
-    )
+    // fs.writeFile("db.json", JSON.stringify(data), err => {
+    //         if (err) {
+    //             console.log(err);
+    //         } else console.log("Write Sucsesfully");
+    //     }
+    // )
 })
 
 app.post("/requests", (req, res) => {
     data.requests.push(req.body);
     res.send(data.requests);
-    fs.writeFile("./db.json", JSON.stringify(data), err => {
-        if (err) {
-            console.log(err);
-        } else
-            console.log("Write Sucsesfully");
-    })
+    // fs.writeFile("./db.json", JSON.stringify(data), err => {
+    //     if (err) {
+    //         console.log(err);
+    //     } else
+    //         console.log("Write Sucsesfully");
+    // })
 })
 
 app.post("/tasks", (req, res) => {
     data.tasks.push(req.body);
     res.send(data.tasks);
-    fs.writeFile("./db.json", JSON.stringify(data), err => {
-        if (err) {
-            console.log(err);
-        } else
-            console.log("Write Sucsesfully");
-    })
+    // fs.writeFile("./db.json", JSON.stringify(data), err => {
+    //     if (err) {
+    //         console.log(err);
+    //     } else
+    //         console.log("Write Sucsesfully");
+    // })
 })
 
 

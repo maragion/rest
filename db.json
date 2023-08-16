@@ -1,1 +1,79 @@
-{"users":[{"user":"Aleksei","age":30,"sex":"male"},{"user":"Elena","age":30,"sex":"female"}],"requests":[{"user":"Aleksei","mail":"example@mail.com","request":"request example"}],"tasks":[{"id":1,"task":"HTML","taskStatus":2,"subTasks":[{"subTaskId":1,"subTask":"BipBip","isComplete":true}]},{"id":2,"task":"Css","taskStatus":1,"subTasks":[{"subTaskId":1,"subTask":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.","isComplete":true},{"subTaskId":2,"subTask":"lorem ipsum dolor sit amet, consectetur adipisicing elit.","isComplete":true},{"id":3,"subTask":"ыфвфыв","isComplete":false}]},{"id":3,"task":"Js","taskStatus":0,"subTasks":[{"subTaskId":1,"subTask":"bip","isComplete":false},{"subTaskId":2,"subTask":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.","isComplete":false},{"subTaskId":3,"subTask":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.","isComplete":false}]},{"id":4,"task":"adasd","taskStatus":0,"subTasks":[]}]}
+{
+  "users": [
+    {
+      "user": "Aleksei",
+      "age": 30,
+      "sex": "male"
+    },
+    {
+      "user": "Elena",
+      "age": 30,
+      "sex": "female"
+    }
+  ],
+  "requests": [
+    {
+      "user": "Aleksei",
+      "mail": "example@mail.com",
+      "request": "request example"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "task": "HTML",
+      "taskStatus": 2,
+      "subTasks": [
+        {
+          "subTaskId": 1,
+          "subTask": "BipBip",
+          "isComplete": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "task": "Css",
+      "taskStatus": 1,
+      "subTasks": [
+        {
+          "subTaskId": 1,
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+          "isComplete": true
+        },
+        {
+          "subTaskId": 2,
+          "subTask": "lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+          "isComplete": true
+        },
+        {
+          "id": 3,
+          "subTask": "ыфвфыв",
+          "isComplete": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "task": "Js",
+      "taskStatus": 0,
+      "subTasks": [
+        {
+          "subTaskId": 1,
+          "subTask": "bip",
+          "isComplete": false
+        },
+        {
+          "subTaskId": 2,
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+          "isComplete": false
+        },
+        {
+          "subTaskId": 3,
+          "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+          "isComplete": false
+        }
+      ]
+    }
+  ]
+}
