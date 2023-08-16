@@ -22,7 +22,7 @@
     {
       "id": 1,
       "task": "HTML",
-      "taskStatus": "complete",
+      "taskStatus": 2,
       "subTasks": [
         {
           "subTaskId": 1,
@@ -34,12 +34,12 @@
     {
       "id": 2,
       "task": "Css",
-      "taskStatus": "inProgress",
+      "taskStatus": 1,
       "subTasks": [
         {
           "subTaskId": 1,
           "subTask": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-          "isComplete": false
+          "isComplete": true
         },
         {
           "subTaskId": 2,
@@ -52,7 +52,7 @@
     {
       "id": 3,
       "task": "Js",
-      "taskStatus": "inProgress",
+      "taskStatus": 0,
       "subTasks": [
         {
           "subTaskId": 1,

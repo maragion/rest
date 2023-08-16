@@ -1,11 +1,12 @@
-const express = require("express");
-const data = require("./db.json");
-const cors = require("cors");
-const fs = require("fs")
+import express from 'express';
+import data from "./db.json" assert {type: 'json'};
+import cors from "cors";
+import fs from "fs"
 
 const app = express();
 const port = 5000;
 
+import {changeTaskStatus} from "./taskStatus.js"
 app.use(cors());
 app.use(express.json());
 
@@ -23,6 +24,8 @@ app.get("/requests", (req, res) => {
 app.get("/tasks", (req, res) => {
     res.send(data.tasks)
 })
+
+
 
 // Get by id
 
@@ -114,6 +117,7 @@ app.patch("/tasks/:id/subTasks/:subId", (req, res) => {
         res.send(data.tasks[id].subTasks[subTaskId])
     } else if (completeKey in req.body) {
         data.tasks[id].subTasks[subTaskId].isComplete = req.body.isComplete
+        changeTaskStatus(data.tasks[id])
         res.send(data.tasks[id].subTasks[subTaskId])
     }
 })
