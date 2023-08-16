@@ -22,6 +22,7 @@
     {
       "id": 1,
       "task": "HTML",
+      "taskStatus": "complete",
       "subTasks": [
         {
           "subTaskId": 1,
@@ -33,6 +34,7 @@
     {
       "id": 2,
       "task": "Css",
+      "taskStatus": "inProgress",
       "subTasks": [
         {
           "subTaskId": 1,
@@ -50,6 +52,7 @@
     {
       "id": 3,
       "task": "Js",
+      "taskStatus": "inProgress",
       "subTasks": [
         {
           "subTaskId": 1,
