@@ -106,9 +106,16 @@ app.post("/tasks/:id/subTasks", (req, res) => {
 app.patch("/tasks/:id/subTasks/:subId", (req, res) => {
     let id = req.params.id;
     let subTaskId = req.params.subId;
-    console.log(req.body)
-    data.tasks[id].subTasks[subTaskId].subTask = req.body.subTask
-    res.send(data.tasks[id].subTasks[subTaskId])
+    let stKey = "subTask";
+    let completeKey = "isComplete";
+
+    if ( stKey in req.body) {
+        data.tasks[id].subTasks[subTaskId].subTask = req.body.subTask
+        res.send(data.tasks[id].subTasks[subTaskId])
+    } else if (completeKey in req.body) {
+        data.tasks[id].subTasks[subTaskId].isComplete = req.body.isComplete
+        res.send(data.tasks[id].subTasks[subTaskId])
+    }
 })
 
 
